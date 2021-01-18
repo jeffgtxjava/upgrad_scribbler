@@ -1,13 +1,135 @@
 <!DOCTYPE html>
 <html>
+    
+    <head>
 
-<head>
+    <!-- inclusions of the common css file -->
+    <link rel="stylesheet" href="./styles/common.css">
     <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
+    <link rel="stylesheet" href="./styles/index.css">
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header">
+        <div class="logo-details">
+            <span class="centralText">Explore, Imagine, Create</span>
+            <a id="pageLogo" class="logo-title">ScriBBler</a>
+        </div>
+        <div class="user-login-signup">
+            <button id="signinButton" class="logButtons">Sign In</button>
+            <button id="signupButton" class="logButtons">Sign Up</button>
+        </div>
+        
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="posts">
+                <button id="allPosts-btn" class="postButtons">All Posts</button>
+                <button id="createPost-btn" class="postButtons">Create Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="modal-signup" class="modal gray-overlay">
+        <div class="modal-content">
+            <form>
+                <div class="form-group">
+                    <h3>Get Started <span id="signUpModalClose" class="fa fa-times float-right" aria-hidden="true"></span></h3>
+                    <hr>
+                </div>
+                
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="userName">Username</label>
+                    <input type="text" class="form-control" id="userName" aria-describedby="userName" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter your password" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" class="form-control" id="password2" aria-describedby="password2" placeholder="Re-enter your password" required>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
+        </div>
+    </div>
+
+     <!-- Sign In Modal -->
+     <div id="modal-signin" class="modal gray-overlay">
+        <div class="modal-content">
+            <form>
+                <div class="form-group">
+                    <h3>Welcome Back! <span id="signInModalClose" class="fa fa-times float-right" aria-hidden="true"></span></h3>
+                    <hr>
+                </div>
+                
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                <label for="passWord">Password</label>
+                <input type="password" class="form-control" id="passWord" aria-describedby="passWord" placeholder="Enter your password" required>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </form>
+
+              <div class="form-group">
+                  <small>
+                    Not a member? <a href="#" id="redirectSignUp">sign Up</a>
+                  </small>
+                </div>
+        </div>
+    </div>
+
+
+    <!--Create Post Modal-->
+    <div id="modal-createPost" class="modal gray-overlay">
+        <div class="modal-content">
+            <form>
+                <div class="form-group">
+                    <h3>Pen Your Post<span id="createPostClose" class="fa fa-times float-right" aria-hidden="true"></span></h3>
+                    <hr>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" aria-describedby="title" placeholder="Enter title of your post" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="conents">Contents</label>
+                    <textarea name="contents" id="contents" cols="30" rows="10" placeholder="Enter the contents of your post" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+        </div>
+    </div>
+
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

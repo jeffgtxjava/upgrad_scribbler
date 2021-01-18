@@ -1,0 +1,16 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.postButtons {
+  color: black;
+  background-color: yellow;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+}
+#modal-createPost {
+  display: none;
+}
