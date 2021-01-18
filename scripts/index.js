@@ -1,44 +1,7 @@
-let signUpButtonHolder = document.getElementById("signupButton");
-let signInButtonHolder = document.getElementById("signinButton");
+let allPosts = document.getElementById('allPosts-btn');
 
-let modalSignUpHolder = document.getElementById('modal-signup');
-let modalSignInHolder = document.getElementById('modal-signin');
+allPosts.addEventListener('click',redirectToBlogList);
 
-let signUpModalCloseHolder = document.getElementById('signUpModalClose');
-let signInModalCloseHolder = document.getElementById('signInModalClose');
-
-let redirectSignUpHolder = document.getElementById('redirectSignUp');
-
-signUpButtonHolder.addEventListener('click',displaySignUpModal);
-signInButtonHolder.addEventListener('click',displaySignInModel);
-
-signUpModalCloseHolder.addEventListener('click',closeSignUpModal);
-signInModalCloseHolder.addEventListener('click',closeSignInModal);
-
-redirectSignUpHolder.addEventListener('click',toggleToSignUp);
-
-function toggleToSignUp(event){
-    closeSignInModal();
-    displaySignUpModal();
-    event.preventDefault();
+function redirectToBlogList(){
+    window.location.href='bloglist.html';
 }
-
-
-
-function closeSignUpModal(){
-    modalSignUpHolder.style.display='none';
-}
-
-function closeSignInModal(){
-    modalSignInHolder.style.display='none';
-}
-
-
-function displaySignUpModal(){
-    modalSignUpHolder.style.display='block';
-}
-
-function displaySignInModel(){
-    modalSignInHolder.style.display='block';
-}
-
