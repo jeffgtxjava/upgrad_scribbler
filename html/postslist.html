@@ -32,25 +32,25 @@
 
     <!-- list of all posts starts here -->
     <div class="flex-container">
-        
+        <input type="hidden" id="hdnpost">
          <!-- post 1 starts here -->
         <div class="post" id="post1">
             <div class="post-head">
-                <p class="post-author">Srishti Gupta</p>
+                <p class="post-author" id="author1">Srishti Gupta</p>
             </div>
 
             <div class="post-body">
                 <div class="post-contentHead">
-                    <p class="contentHead">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <p class="contentHead" id="contentHead1">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true" onclick="setdeletepostid('post1')"></i>
                     </span>
                 </div>
-                <p class="post-content">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <p class="post-content" id="postContent1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
                 <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i class="fas fa-ellipsis-h" onclick="showmore(contentHead1,postContent1,author1)"></i>
                 </span>
             </div>
         </div>
@@ -59,21 +59,21 @@
         <!-- post 2 starts here -->
         <div class="post" id="post2">
             <div class="post-head">
-                <p class="post-author">Colby Fayock</p>
+                <p class="post-author" id="author2">Colby Fayock</p>
             </div>
 
             <div class="post-body">
                 <div class="post-contentHead">
-                    <p class="contentHead">What is linting and how can it save you time?</p>
+                    <p class="contentHead" id="contentHead2">What is linting and how can it save you time?</p>
                     <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true" onclick="setdeletepostid('post2')"></i>
                     </span>
                 </div>
-                <p class="post-content">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <p class="post-content" id="postContent2">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
                 <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i class="fas fa-ellipsis-h" onclick="showmore(contentHead2,postContent2,author2)"></i>
                 </span>
             </div>
         </div>
@@ -82,21 +82,21 @@
         <!-- post 3 starts here -->
         <div class="post" id="post3">
             <div class="post-head">
-                <p class="post-author">Yazeed Bzadough</p>
+                <p class="post-author" id="author3">Yazeed Bzadough</p>
             </div>
 
             <div class="post-body">
                 <div class="post-contentHead">
-                    <p class="contentHead">How to Get More Views on Your Tech Blog</p>
+                    <p class="contentHead" id="contentHead3">How to Get More Views on Your Tech Blog</p>
                     <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true" onclick="setdeletepostid('post3')"></i>
                     </span>
                 </div>
-                <p class="post-content">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                <p class="post-content" id="postContent3">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
                 <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i class="fas fa-ellipsis-h" onclick="showmore(contentHead3,postContent3,author3)"></i>
 
                 </span>
             </div>
@@ -106,22 +106,22 @@
         <!-- post 4 starts here -->
         <div class="post" id="post4">
             <div class="post-head"> 
-                <p class="post-author">Cedd Burge</p>
+                <p class="post-author" id="author4">Cedd Burge</p>
             </div>
 
             <div class="post-body">
                 <div class="post-contentBody">
-                    <p class="contentHead">How to write easily describable code</p>
+                    <p class="contentHead" id="contentHead4">How to write easily describable code</p>
                     <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true" onclick="setdeletepostid('post4')"></i>
                     </span>
                 </div>
-                <p class="post-content">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                <p class="post-content" id="postContent4">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
                 <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i class="fas fa-ellipsis-h" onclick="showmore(contentHead4,postContent4,author4)"></i>
 
                 </span>
             </div>
@@ -131,22 +131,22 @@
         <!-- post 5 starts here -->
         <div class="post" id="post5">
             <div class="post-head">
-                <p class="post-author">Srishti Gupta</p>
+                <p class="post-author" id="author5">Srishti Gupta</p>
             </div>
 
             <div class="post-body">
                 <div class="post-contentHead">
-                    <p class="contentHead">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <p class="contentHead" id="contentHead5">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
                     <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true" onclick="setdeletepostid('post5')"></i>
                     </span>
                 </div>
-                <p class="post-content">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                <p class="post-content" id="postContent5">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
                 <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i class="fas fa-ellipsis-h" onclick="showmore(contentHead5,postContent5,author5)"></i>
 
                 </span>
             </div>
@@ -156,6 +156,25 @@
 
 
         <!-- TODO: Write code for delete post modal here -->
+            <!-- delete Modal -->
+        <div id="modal-delete" class="modal gray-overlay">
+            <div class="modal-content">
+                <div class="form-group">
+                    <h3>Are you sure you want to delete this post?</h3>
+                </div>
+                <div class="form-group">
+                    <button id="btnYes" class="buttn" onclick="DeletePost()">Yes</button>
+                    <button id="btnNo" class="buttn" onclick="clearPopUp()">No</button>
+                    <small ></small>
+                </div>
+    
+                  <!-- <div class="form-group">
+                      <small>
+                        Not a member? <a href="#" id="redirectSignUp">sign Up</a>
+                      </small>
+                    </div> -->
+            </div>
+        </div>
 
     </div>
     <!-- list of all posts ends here -->
@@ -226,7 +245,6 @@
                     </div>
             </div>
         </div>
-    
     <script src="../scripts/common.js"></script>
     <script src="../scripts/postlist.js"></script>
 </body>

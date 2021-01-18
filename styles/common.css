@@ -51,9 +51,9 @@ button.logButtons {
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5%;
   max-width: 400px;
 }
+
 button.logButtons {
   width: 90px;
   padding: 10px;
@@ -76,6 +76,7 @@ button.logButtons {
   width: 100%;
   margin: 20px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
 }
 .form-group > h3 {
   font-weight: 300;
