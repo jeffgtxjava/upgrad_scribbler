@@ -1,0 +1,131 @@
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeedd;
+  margin-top: 10px;
+}
+.header {
+  height: 70px;
+}
+#pageLogo {
+  font-family: "Montez", cursive;
+  font-size: 40px;
+  color: blue;
+  padding: 0px 10px;
+  margin: 0px;
+}
+.logo-details {
+  float: left;
+}
+.centralText {
+  font-family: "Ubuntu Mono", monospace;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  margin: 0px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0%;
+}
+
+.post {
+  height: 150px;
+  width: 40%;
+  margin: 20px;
+  display: flex;
+}
+.post-head {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: white;
+  height: 150px;
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+.post-author {
+  width: 100%;
+  text-align: center;
+  columns: 1;
+}
+.post-body {
+  width: 80%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: gainsboro;
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  padding-left: 20px;
+}
+.post-contentHead {
+  height: auto;
+}
+.contentHead {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  float: left;
+  margin: 10px;
+  width: calc(100% - 60px);
+}
+.deleteicon {
+  float: right;
+  padding: 5px;
+  width: 30px;
+  height: 40px;
+}
+.deleteicon:hover,
+.ellipsis:hover {
+  cursor: pointer;
+}
+.post-content {
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ellipsis {
+  float: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#btnYes {
+  background-color: green;
+  float: left;
+}
+#btnNo {
+  background-color: red;
+  float: right;
+}
+
+.buttn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#modal-delete {
+  display: none;
+}
