@@ -103,8 +103,33 @@
         </div>
     </div>
 
-        <script src="./scripts/common.js"></script>
-      <script src="./scripts/index.js"></script>
+
+    <!--Create Post Modal-->
+    <div id="modal-createPost" class="modal gray-overlay">
+        <div class="modal-content">
+            <form>
+                <div class="form-group">
+                    <h3>Pen Your Post<span id="createPostClose" class="fa fa-times float-right" aria-hidden="true"></span></h3>
+                    <hr>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" aria-describedby="title" placeholder="Enter title of your post" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="conents">Contents</label>
+                    <textarea name="contents" id="contents" cols="30" rows="10" placeholder="Enter the contents of your post" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+        </div>
+    </div>
+
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

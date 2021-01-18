@@ -101,6 +101,19 @@ button.logButtons {
   height: 20px;
   font-size: 12px;
 }
+
+.form-group > textarea {
+  margin: 5px;
+  display: block;
+  width: 95%;
+  resize: vertical;
+  border: none;
+  background-color: rgba(255, 228, 196, 0.2);
+  padding: 10px;
+  height: 20px;
+  font-size: 12px;
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
 .btn {
   background-color: #4caf50; /* Green */
   border: none;
