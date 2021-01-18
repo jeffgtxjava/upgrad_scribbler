@@ -12,7 +12,7 @@ createPostClose.addEventListener('click',closeCreatePostModal);
 
 
 function redirectToBlogList(){
-    window.location.href='bloglist.html';
+    window.location.href='html/postslist.html';
 }
 
 function closeCreatePostModal(){

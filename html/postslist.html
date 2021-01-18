@@ -2,129 +2,233 @@
 <html>
 
 <head>
+   
+    <!-- inclusions of the common css file -->
+    <link rel="stylesheet" href="../styles/postlist.css">
     <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
+    <link rel="stylesheet" href="../styles/common.css">
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
+    <div class="header">
+        <div class="logo-details">
+            <span class="centralText">Explore, Imagine, Create</span>
+            <a id="pageLogo" class="logo-title">ScriBBler</a>
+        </div>
+        <div class="user-login-signup">
+            <button id="signinButton" class="logButtons">Sign In</button>
+            <button id="signupButton" class="logButtons">Sign Up</button>
+        </div>
+        
+    </div>
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
-    <div>
-
-        <!-- post 1 starts here -->
-        <div>
-            <div>
-                <p>Srishti Gupta</p>
+    <div class="flex-container">
+        
+         <!-- post 1 starts here -->
+        <div class="post" id="post1">
+            <div class="post-head">
+                <p class="post-author">Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span>
+            <div class="post-body">
+                <div class="post-contentHead">
+                    <p class="contentHead">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
-                <span>
+                <p class="post-content">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fas fa-ellipsis-h"></i>
                 </span>
             </div>
         </div>
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
-                <p>Colby Fayock</p>
+        <div class="post" id="post2">
+            <div class="post-head">
+                <p class="post-author">Colby Fayock</p>
             </div>
 
-            <div>
-                <div>
-                    <p>What is linting and how can it save you time?</p>
-                    <span>
+            <div class="post-body">
+                <div class="post-contentHead">
+                    <p class="contentHead">What is linting and how can it save you time?</p>
+                    <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-                <span>
+                <p class="post-content">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fas fa-ellipsis-h"></i>
                 </span>
             </div>
         </div>
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div>
-            <div>
-                <p>Yazeed Bzadough</p>
+        <div class="post" id="post3">
+            <div class="post-head">
+                <p class="post-author">Yazeed Bzadough</p>
             </div>
 
-            <div>
-                <div>
-                    <p>How to Get More Views on Your Tech Blog</p>
-                    <span>
+            <div class="post-body">
+                <div class="post-contentHead">
+                    <p class="contentHead">How to Get More Views on Your Tech Blog</p>
+                    <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
-                <span>
+                <p class="post-content">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fas fa-ellipsis-h"></i>
+
                 </span>
             </div>
         </div>
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div>
-            <div>
-                <p>Cedd Burge</p>
+        <div class="post" id="post4">
+            <div class="post-head"> 
+                <p class="post-author">Cedd Burge</p>
             </div>
 
-            <div>
-                <div>
-                    <p>How to write easily describable code</p>
-                    <span>
+            <div class="post-body">
+                <div class="post-contentBody">
+                    <p class="contentHead">How to write easily describable code</p>
+                    <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                <p class="post-content">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
-                <span>
+                <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fas fa-ellipsis-h"></i>
+
                 </span>
             </div>
         </div>
         <!-- post 4 ends here -->
 
         <!-- post 5 starts here -->
-        <div>
-            <div>
-                <p>Srishti Gupta</p>
+        <div class="post" id="post5">
+            <div class="post-head">
+                <p class="post-author">Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
-                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                    <span>
+            <div class="post-body">
+                <div class="post-contentHead">
+                    <p class="contentHead">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <span class="deleteicon">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                <p class="post-content">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
-                <span>
+                <span class="ellipsis">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fas fa-ellipsis-h"></i>
+
                 </span>
             </div>
         </div>
         <!-- post 5 ends here -->
 
+
+
         <!-- TODO: Write code for delete post modal here -->
 
     </div>
     <!-- list of all posts ends here -->
+
+
+
+        <!-- Signup Modal -->
+        <div id="modal-signup" class="modal gray-overlay">
+            <div class="modal-content">
+                <form>
+                    <div class="form-group">
+                        <h3>Get Started <span id="signUpModalClose" class="fa fa-times float-right" aria-hidden="true"></span></h3>
+                        <hr>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter your name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="userName">Username</label>
+                        <input type="text" class="form-control" id="userName" aria-describedby="userName" placeholder="Enter your username" required>
+                    </div>
+    
+                    <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter your password" required>
+                    </div>
+    
+    
+                    <div class="form-group">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" class="form-control" id="password2" aria-describedby="password2" placeholder="Re-enter your password" required>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                  </form>
+            </div>
+        </div>
+    
+         <!-- Sign In Modal -->
+         <div id="modal-signin" class="modal gray-overlay">
+            <div class="modal-content">
+                <form>
+                    <div class="form-group">
+                        <h3>Welcome Back! <span id="signInModalClose" class="fa fa-times float-right" aria-hidden="true"></span></h3>
+                        <hr>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="Enter your username" required>
+                    </div>
+    
+                    <div class="form-group">
+                    <label for="passWord">Password</label>
+                    <input type="password" class="form-control" id="passWord" aria-describedby="passWord" placeholder="Enter your password" required>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                  </form>
+    
+                  <div class="form-group">
+                      <small>
+                        Not a member? <a href="#" id="redirectSignUp">sign Up</a>
+                      </small>
+                    </div>
+            </div>
+        </div>
+    
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/postlist.js"></script>
 </body>
 
 </html>
