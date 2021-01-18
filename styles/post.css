@@ -1,0 +1,63 @@
+.main {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid red;
+}
+.text-center {
+  text-align: center;
+}
+/* .title > h3 {
+  padding: 20px;
+} */
+.update_div {
+  padding: 20px;
+}
+.userName {
+  float: left;
+}
+.updatebutton {
+  float: right;
+}
+.flex-container {
+  clear: both;
+  padding: 20px;
+}
+.updatebutton {
+  width: auto;
+  height: 100%;
+}
+.userName {
+  width: auto;
+  height: 100%;
+}
+
+.buttons {
+  background-color: #ff3f66;
+  border: 0px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: inset;
+  box-shadow: 3px 5px 15px #fee2e8;
+}
+.buttons:hover {
+  transform: translate(-1px, -2px);
+}
+
+p {
+  text-align: justify;
+}
+.flex-container {
+  width: 100%;
+  padding: 10px;
+}
+.addedcomments {
+  border: 15px solid gray;
+}
+li {
+  margin-left: -40px;
+  border: 6px solid gainsboro;
+  padding: 10px;
+}
+.commentsection {
+  margin-top: 10px;
+}
